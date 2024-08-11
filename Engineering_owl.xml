@@ -1,0 +1,202 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:mechanicalengineering="http://example.com/mechanicalengineering">
+
+    <!-- OWL Header Example -->
+    <owl:Ontology rdf:about="http://www.example.com/mechanicalengineering">
+        <dc:title>Mechanical Engineering Ontology</dc:title>
+        <dc:description>Explains about mechanical engineering ontology</dc:description>
+    </owl:Ontology>
+
+    <!--Engineering Design class-->
+    <owl:Class rdf:about="http://example.com/pizzas#EngineeringDesign">
+        <rdfs:label>Engineering Design</rdfs:label>
+        <rdfs:comment>The class representing engineering design concepts.</rdfs:comment>
+    </owl:Class>
+
+         <!-- Engineering Design Subclass Product Design -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ProductDesign">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EngineeringDesign"/>
+            <rdfs:label>Product Design</rdfs:label>
+            <rdfs:comment>The class representing product design concepts.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Engineering Design Subclass Process Design -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ProcessDesign">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EngineeringDesign"/>
+            <rdfs:label>Process Design</rdfs:label>
+            <rdfs:comment>The class representing process design concepts.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Engineering Design Subclass Structural Design -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#StructuralDesign">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EngineeringDesign"/>
+            <rdfs:label>Structural Design</rdfs:label>
+            <rdfs:comment>The class representing structural design concepts.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Engineering Design Subclass Electronic Design -->
+        <owl:Class rdf:about="http://example.com/electricalengineering#ElectronicDesign">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EngineeringDesign"/>
+            <rdfs:label>Electronic Design</rdfs:label>  
+            <rdfs:comment>The class representing electronic design concepts.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Engineering Design Subclass User Experience Design -->
+        <owl:Class rdf:about="http://example.com/design#UXDesign">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EngineeringDesign"/>
+            <rdfs:label>User Experience Design</rdfs:label>
+            <rdfs:comment>The class representing user experience design concepts.</rdfs:comment>
+        </owl:Class>
+
+    <!--Knowledge Discovery class-->
+    <owl:Class rdf:about="http://example.com/pizzas#KnowledgeDiscovery">
+        <rdfs:label>Knowledge Discovery</rdfs:label>
+        <rdfs:comment>The class representing knowledge discovery concepts.</rdfs:comment>
+    </owl:Class>
+
+        <!--Knowledge Discovery Subclass Data Mining-->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#DataMining">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#KnowledgeDiscovery"/>
+            <rdfs:label>Data Mining</rdfs:label>
+            <rdfs:comment>The class representing knowledge discovery through data mining techniques.</rdfs:comment>
+        </owl:Class>
+
+        <!--Knowledge Discovery Subclass Text Mining-->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#TextMining">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#KnowledgeDiscovery"/>
+            <rdfs:label>Text Mining</rdfs:label>
+            <rdfs:comment>The class representing knowledge discovery through text mining techniques.</rdfs:comment>
+        </owl:Class>
+
+
+        <!-- Knowledge Discovery Subclass Image Analysis -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ImageAnalysis">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#KnowledgeDiscovery"/>
+            <rdfs:label>Image Analysis</rdfs:label>
+            <rdfs:comment>The class representing knowledge discovery through image analysis techniques.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Knowledge Discovery Subclass Pattern Recognition -->
+        <owl:Class rdf:about="http://example.com/computerscience#PatternRecognition">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#KnowledgeDiscovery"/>
+            <rdfs:label>Pattern Recognition</rdfs:label>
+            <rdfs:comment>The class representing knowledge discovery through pattern recognition techniques.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Knowledge Discovery Subclass Predictive Analytics -->
+        <owl:Class rdf:about="http://example.com/dataanalytics#PredictiveAnalytics">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#KnowledgeDiscovery"/>
+            <rdfs:label>Predictive Analytics</rdfs:label>
+            <rdfs:comment>The class representing knowledge discovery through predictive analytics techniques.</rdfs:comment>
+        </owl:Class>
+
+
+    <!--Quality Control class-->
+    <owl:Class rdf:about="http://example.com/pizzas#QualityControl">
+        <rdfs:label>Quality Control</rdfs:label>
+        <rdfs:comment>The class representing quality control concepts.</rdfs:comment>
+    </owl:Class>
+
+        <!--Quality Control Subclass Product Quality Control -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ProductQualityControl">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#QualityControl"/>
+            <rdfs:label>Product Quality Control</rdfs:label>
+            <rdfs:comment>The class representing quality control for products.</rdfs:comment>
+        </owl:Class>
+
+        <!--Quality Control Subclass Product Quality Control -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ProcessQualityControl">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#QualityControl"/>
+            <rdfs:label>Process Quality Control</rdfs:label>
+            <rdfs:comment>The class representing quality control for processes.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Quality Control Subclass Material Quality Control -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#MaterialQualityControl">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#QualityControl"/>
+            <rdfs:label>Material Quality Control</rdfs:label>
+            <rdfs:comment>The class representing quality control for materials used in production.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Quality Control Subclass Environmental Quality Control -->
+        <owl:Class rdf:about="http://example.com/environmentalengineering#EnvironmentalQualityControl">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#QualityControl"/>
+            <rdfs:label>Environmental Quality Control</rdfs:label>
+            <rdfs:comment>The class representing quality control for environmental impact and sustainability.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Quality Control Subclass Supplier Quality Control -->
+        <owl:Class rdf:about="http://example.com/supplychain#SupplierQualityControl">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#QualityControl"/>
+            <rdfs:label>Supplier Quality Control</rdfs:label>
+            <rdfs:comment>The class representing quality control for supplier-provided components and materials.</rdfs:comment>
+        </owl:Class>
+
+
+    <!--Education and Training Control class-->    
+    <owl:Class rdf:about="http://example.com/pizzas#EducationAndTraining">
+        <rdfs:label>Education and Training</rdfs:label>
+        <rdfs:comment>The class representing education and training concepts.</rdfs:comment>
+    </owl:Class>
+
+        <!-- Education and Training Subclasse of EducationAndTraining -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#StudentTraining">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EducationAndTraining"/>
+            <rdfs:label>Student Training</rdfs:label>
+            <rdfs:comment>The class representing training for students in mechanical engineering.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Education and Training Subclasse of Professional Development -->
+        <owl:Class rdf:about="http://example.com/mechanicalengineering#ProfessionalDevelopment">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EducationAndTraining"/>
+            <rdfs:label>Professional Development</rdfs:label>
+            <rdfs:comment>The class representing ongoing professional development in mechanical engineering.</rdfs:comment>
+        </owl:Class>
+
+
+        <!-- Education and Training Subclass Workshop Training -->
+        <owl:Class rdf:about="http://example.com/training#WorkshopTraining">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EducationAndTraining"/>
+            <rdfs:label>Workshop Training</rdfs:label>
+            <rdfs:comment>The class representing hands-on workshop training in various mechanical engineering topics.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Education and Training Subclass Leadership Training -->
+        <owl:Class rdf:about="http://example.com/leadership#LeadershipTraining">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EducationAndTraining"/>
+            <rdfs:label>Leadership Training</rdfs:label>
+            <rdfs:comment>The class representing training focused on developing leadership skills in mechanical engineering professionals.</rdfs:comment>
+        </owl:Class>
+
+        <!-- Education and Training Subclass Online Courses -->
+        <owl:Class rdf:about="http://example.com/onlinecourses#OnlineCourses">
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+            <rdfs:subClassOf rdf:resource="http://example.com/mechanicalengineering#EducationAndTraining"/>
+            <rdfs:label>Online Courses</rdfs:label>
+            <rdfs:comment>The class representing education and training delivered through online courses in mechanical engineering.</rdfs:comment>
+        </owl:Class>
+
+</rdf:RDF>
